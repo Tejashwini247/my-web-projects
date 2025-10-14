@@ -1,0 +1,15 @@
+p{
+    background-color: rgba(10,1,1,0.1);
+    color: purple;
+    font-family: 'Times New Roman' ;
+    font-size: 30px ;
+    font-style:italic;
+    font-weight: 5 ;
+    line-height: 2;
+    word-spacing: 1px;
+    text-align: left;
+    text-transform:initial;
+    text-decoration: dotted;
+    text-decoration-line: underline;
+    text-shadow: 1px 1px 0px yellow;
+}
