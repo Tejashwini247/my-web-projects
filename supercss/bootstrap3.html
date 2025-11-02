@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WanderWay – Your Way to Wander the World</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Lottie Player -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #F8F9FA;
+      color: #333;
+    }
+    .navbar {
+      background-color: #0A2647;
+    }
+    .navbar-brand {
+      color: #4DB7FE !important;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      color: white !important;
+      margin: 0 10px;
+    }
+    .nav-link:hover {
+      color: #FF7F50 !important;
+    }
+
+    .hero {
+      background: linear-gradient(to bottom right, #4DB7FE, #0A2647);
+      color:white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      font-weight: 600;
+    }
+
+    .search-section {
+      background-color: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: -60px;
+      z-index: 10;
+      position: relative;
+    }
+
+    .btn-search {
+      background-color:#4DB7FE;
+      color:#4DB7FE;
+      border: none;
+    }
+    .btn-search:hover {
+      background-color:#4DB7FE;
+    }
+
+    .offers-section {
+      padding: 60px 20px;
+    }
+
+    .offer-card {
+      transition: all 0.3s ease;
+    }
+    .offer-card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      background-color: #0A2647;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">WanderWay</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">Flights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Hotels</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Trains</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cabs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 data-aos="fade-up">Your Way to Wander the World</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Find the best deals on Flights, Hotels, and more!</p>
+    <lottie-player 
+     src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG90ZWxzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" 
+      background="transparent" 
+      speed="1" 
+      style="width: 300px; height: 300px; margin: auto;" 
+      loop autoplay>
+    
+    </lottie-player>
+  </section>
+
+  <!-- Search Section -->
+  <div class="container search-section" data-aos="fade-up">
+    <ul class="nav nav-tabs" id="searchTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="flights-tab" data-bs-toggle="tab" data-bs-target="#flights" type="button">Flights</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="hotels-tab" data-bs-toggle="tab" data-bs-target="#hotels" type="button">Hotels</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="trains-tab" data-bs-toggle="tab" data-bs-target="#trains" type="button">Trains</button>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-3">
+      <!-- Flights -->
+      <div class="tab-pane fade show active" id="flights">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-4">
+            <label class="form-label">From</label>
+            <input type="text" class="form-control" placeholder="City or Airport">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">To</label>
+            <input type="text" class="form-control" placeholder="Destination">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-search w-100">Go</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotels -->
+      <div class="tab-pane fade" id="hotels">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-4">
+            <label class="form-label">Location</label>
+            <input type="text" class="form-control" placeholder="Enter city or hotel name">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Check-in</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Check-out</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-search w-100">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trains -->
+      <div class="tab-pane fade" id="trains">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-4">
+            <label class="form-label">From</label>
+            <input type="text" class="form-control" placeholder="Enter station">
+          </div>
+          <div class="col-md-4">
+            <label class="form-label">To</label>
+            <input type="text" class="form-control" placeholder="Destination station">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <button class="btn btn-search w-100">Go</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offers Section -->
+  <section class="offers-section">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Exclusive WanderWay Offers</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card offer-card">
+            <img src="" class="card-img-top" alt="Beach offer">
+            <div class="card-body text-center">
+              <h5>Beach Getaway 30% Off</h5>
+              <p>Enjoy summer discounts on top destinations!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card offer-card">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" class="card-img-top" alt="City break">
+            <div class="card-body text-center">
+              <h5>City Escapes</h5>
+              <p>Plan your weekend in top urban destinations.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="card offer-card">
+            <img src="" class="card-img-top" alt="Mountain adventure">
+            <div class="card-body text-center">
+              <h5>Mountain Adventures</h5>
+              <p>Save big on trekking & nature travel packages.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 WanderWay | Designed with ❤ for explorers</p>
+  </footer>
+
+  <!-- Bootstrap JS + AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

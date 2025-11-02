@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Restaurant</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CraveNest</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Menu</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Main Course</a></li>
+            <li><a class="dropdown-item" href="#">Starters</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Desserts</a></li>
+          </ul>
+        </li>
+    
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<style>
+    .carousel-item{
+        height: 400px;
+    }
+    .carousel-item img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+</style>
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1728745118618-941ec839208f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fGZvb2QlMjBtYWluJTIwY291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="d-block w-100" alt="10">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1757715377796-2a368ec7499e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2QlMjBtYWluJTIwY291cnNlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://media.istockphoto.com/id/544722402/photo/brushetta-set-and-glass-of-red-wine-small-sandwiches-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=nOM0dUEIYDRf_0R4AsA1-Vmey-RM5gQZFJBInVt2u00="class="d-block w-100" alt="...">
+    </div>
+    <div class ="carousel-item">
+        <img src="https://images.unsplash.com/photo-1598309141235-06d295271f81?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZvb2QlMjBzdGFydGVyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"class="d-block w-100 " alt="...">
+    </div>
+    <div class ="carousel-item">
+        <img src="https://media.istockphoto.com/id/534053642/photo/donuts-in-multicolored-glaze-close-up.webp?a=1&b=1&s=612x612&w=0&k=20&c=foFpZTE48whD1DF7zs1BHZp-KnjrSzXYjKL2JzcgLvk="class="d-block w-100 " alt="...">
+    </div>
+    <div class ="carousel-item">
+        <img src="https://media.istockphoto.com/id/1149135424/photo/group-of-sweet-and-salty-snacks-perfect-for-binge-watching.webp?a=1&b=1&s=612x612&w=0&k=20&c=Fb-tmjfLTQaBHgBiVvKY9lYadeMsmzOSXkr2epG43sA="class="d-block w-100" alt="...">
+    </div>
+    </div>
+    
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<style>
+</style>
+<div class ="container mt-2">
+    <div class ="row">
+        <div class ="col-md-4">
+  <div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmlyeWFuaXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=600"class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Biryani</h5>
+    <p class="card-text">Spicy, flavorful, and irresistble chicken biryani.</p>
+    <a href="#" class="btn btn-primary">order now</a>
+  </div>
+  </div>
+</div>
+  
+<div class ="col-md-4">
+<div class="card" style="width: 18rem;">
+    
+  <img src="https://images.unsplash.com/photo-1679310290259-78d9eaa32700?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHNwcmluZ3JvbGxzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Starters</h5>
+    <p class="card-text">"Golden-fried rools stuffed with fresh vegetables ad herbs</p>
+    <a href="#" class="btn btn-primary">order now</a>
+  </div>
+</div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img src="https://images.unsplash.com/photo-1563778084459-859099e48677?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTI2fHxkZXNzZXJ0fGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">"Freshly baked cupcakes with irresistble flavor.</p>
+    <a href="#" class="btn btn-primary">order now</a>
+  </div>
+</div>
+<button type="button" class="btn-close" aria-label="Close"></button>
+</body>
+</html>

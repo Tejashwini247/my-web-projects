@@ -1,0 +1,16 @@
+.parent{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+}
+.child{
+    height: 100px;
+    width: 100px;
+    background-color: palevioletred;
+}
+html{
+    font-size:50px;
+}
+h1{
+    font-size:2rem;
+}
